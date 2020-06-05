@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toTopOf="@+id/gl2"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/gl1"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintVertical_bias="0.492" />
 
     <EditText
         android:id="@+id/yellow"
@@ -49,22 +49,22 @@
         android:hint="请输入黃燈秒數"
         app:layout_constraintBottom_toTopOf="@+id/gl2"
         app:layout_constraintEnd_toStartOf="@+id/red"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toEndOf="@+id/green"
         app:layout_constraintTop_toTopOf="@+id/gl1"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintVertical_bias="0.498" />
 
     <EditText
         android:id="@+id/red"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
+        android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:hint="请输入紅燈秒數"
         app:layout_constraintBottom_toTopOf="@+id/gl2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gl1"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.492" />
 
     <Button
         android:id="@+id/btnStart"
@@ -91,6 +91,26 @@
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
