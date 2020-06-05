@@ -51,7 +51,7 @@ public class GameActivity extends AppCompatActivity {
     }
     //利用手指觸控，控制小男孩走路
     public boolean onTouchEvent (MotionEvent event){
-        if (event.getAction() == MotionEvent.ACTION_MOVE){
+        if (event.getAction() == MotionEvent.ACTION_DOWN){
             GameSV.BoyMoving = true;
             handler.post(runnable);
         }
